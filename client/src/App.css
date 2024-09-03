@@ -1,0 +1,58 @@
+/* src/App.css */
+
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-color: #282c34;
+  padding: 20px;
+  color: white;
+}
+
+.task-list {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: left;
+}
+
+form {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin: 10px 0 5px;
+}
+
+input,
+textarea,
+select {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+}
+
+button {
+  padding: 10px 15px;
+  margin-right: 10px;
+  border: none;
+  color: white;
+  background-color: #007bff;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+@media (max-width: 600px) {
+  .task-list {
+    padding: 10px;
+  }
+
+  button {
+    margin: 5px 0;
+  }
+}
