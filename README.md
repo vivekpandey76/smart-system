@@ -1,7 +1,7 @@
 This project is a simple Task Management Application built using React.js for the frontend and Node.js with Express.js for the backend. The application allows users to create, update, and manage tasks, with support for setting deadlines and statuses.
 
 1) First, clone the repository to your local machine:
-git clone [https://github.com/your-username/task-management-app.git](https://github.com/vivekpandey76/smart-system.git)
+git clone https://github.com/vivekpandey76/smart-system.git
 
 2. Backend Setup
 Create a .env File
