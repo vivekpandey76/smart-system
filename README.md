@@ -32,4 +32,7 @@ Start the frontend development server using the following command:
 
 npm start
 
+Create A .env File For baseUrl In client repo and add this in baseUrl Since on local our server is running on PORT: 3002
+REACT_APP_BASE_URL=http://localhost:3002/api
+
 
