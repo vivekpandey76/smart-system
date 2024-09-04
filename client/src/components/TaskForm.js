@@ -30,9 +30,12 @@ const TaskForm = ({ task, fetchTasks, setEditingTask }) => {
     e.preventDefault();
     try {
       if (task) {
-        await axios.put(`/api/tasks/${task.id}`, formData);
+        await axios.put(
+          `${process.env.REACT_APP_BASE_URL}/tasks/${task.id}`,
+          formData
+        );
       } else {
-        await axios.post("/api/tasks", formData);
+        await axios.post(`${process.env.REACT_APP_BASE_URL}/tasks`, formData);
       }
       setFormData({
         title: "",

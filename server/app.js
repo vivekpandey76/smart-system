@@ -1,11 +1,12 @@
-// app.js
 const express = require("express");
 const bodyParser = require("body-parser");
+const cors = require("cors"); // Import CORS middleware
 const taskRoutes = require("./routes/task.routes");
 const sequelize = require("./config/db.config");
 
 const app = express();
 
+app.use(cors()); // Use CORS middleware
 app.use(bodyParser.json());
 app.use("/api", taskRoutes);
 
@@ -24,7 +25,7 @@ sequelize
   });
 
 // Start the server
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3002;
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}.`);
 });

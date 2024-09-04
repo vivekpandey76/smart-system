@@ -13,7 +13,9 @@ const TaskList = () => {
 
   const fetchTasks = async () => {
     try {
-      const response = await axios.get("/api/tasks");
+      const response = await axios.get(
+        `${process.env.REACT_APP_BASE_URL}/tasks`
+      );
       setTasks(response.data);
     } catch (error) {
       console.error("Error fetching tasks:", error);
@@ -22,7 +24,7 @@ const TaskList = () => {
 
   const handleDelete = async (id) => {
     try {
-      await axios.delete(`/api/tasks/${id}`);
+      await axios.delete(`${process.env.REACT_APP_BASE_URL}/tasks/${id}`);
       fetchTasks();
     } catch (error) {
       console.error("Error deleting task:", error);
