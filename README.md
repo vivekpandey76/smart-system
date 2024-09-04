@@ -1,30 +1,35 @@
-### 1. Clone the repository
+This project is a simple Task Management Application built using React.js for the frontend and Node.js with Express.js for the backend. The application allows users to create, update, and manage tasks, with support for setting deadlines and statuses.
 
-```bash
+1) First, clone the repository to your local machine:
 git clone https://github.com/your-username/task-management-app.git
 
-For The Backend Code Create .env file and add this required data in that env file
+2. Backend Setup
+Create a .env File
 DB_HOST=localhost
 DB_USER=your_db_username
 DB_PASSWORD=your_db_password
 DB_NAME=task_management_db
-DB_DIALECT=mysql # or 'postgres' for PostgreSQL
+DB_DIALECT=mysql   # Use 'postgres' for PostgreSQL
 PORT=3000
 
-Install Required Modules
+Make sure to replace your_db_username and your_db_password with your actual database credentials.
+
+Navigate to the backend directory and install the necessary dependencies:
 npm install
 
-Use this command to Run Backend Server
+Start the Backend Server
+Run the following command to start the backend server:
+
 npm start
 
-You can also check the endpoint working or not with postman using the baseurl as  http://localhost:3000
-Create a Task: POST /api/tasks
-Get All Tasks: GET /api/tasks
-Get a Task by ID: GET /api/tasks/:id
-Update a Task: PUT /api/tasks/:id
-Delete a Task: DELETE /api/tasks/:id
+4. Frontend Setup
+Navigate to the frontend directory and install the required dependencies:
 
-For Running The Frontend Run npm install and then run npm start after that run npm start for server running
+npm install
+
+Start the Frontend Development Server
+Start the frontend development server using the following command:
+
+npm start
 
 
-CREATE DATABASE task_management_db;
